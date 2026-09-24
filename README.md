@@ -35,3 +35,7 @@ Matched VoLTE hints:
 `volte`, `vo_lte`, `ims_lte`, `hd_voice`, `hdvoice`
 
 Every successful replacement is logged with the `VoServiceFrame` tag in LSPosed logs. If Infinity-X / Vector uses a different resource name, the log output can be used to add it to the candidate list.
+
+
+## v1.0.1 workflow fix
+GitHub Actions now uses `android-actions/setup-android@v4` with `packages: ""` so the obsolete SDK package `tools` is not requested. Required SDK components are installed explicitly.
